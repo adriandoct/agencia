@@ -1,7 +1,7 @@
 "use client"
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Search, MapPin, Calendar, Users, Building2, Star, Coffee, Wifi, Pool } from 'lucide-react';
+import { Search, MapPin, Calendar, Users, Building2, Star, Coffee, Wifi, Waves } from 'lucide-react';
 import Image from 'next/image';
 
 const mockHoteles = [
@@ -95,7 +95,7 @@ export default function HotelesPage() {
               <div className="space-y-2">
                 <label className="flex items-center gap-2 cursor-pointer">
                   <input type="checkbox" className="rounded border-white/20 bg-transparent text-gold focus:ring-gold focus:ring-offset-deep-blue" />
-                  <span className="text-sm text-gray-400 flex items-center gap-2"><Pool className="w-4 h-4"/> Alberca</span>
+                  <span className="text-sm text-gray-400 flex items-center gap-2"><Waves className="w-4 h-4"/> Alberca</span>
                 </label>
                 <label className="flex items-center gap-2 cursor-pointer">
                   <input type="checkbox" defaultChecked className="rounded border-white/20 bg-transparent text-gold focus:ring-gold focus:ring-offset-deep-blue" />
@@ -162,7 +162,7 @@ export default function HotelesPage() {
                   
                   <div className="flex gap-4 mt-4">
                     <div className="flex items-center gap-1 text-xs text-gray-300 bg-white/5 px-2 py-1 rounded"><Wifi className="w-3 h-3"/> Wi-Fi</div>
-                    {hotel.id === 1 || hotel.id === 2 ? <div className="flex items-center gap-1 text-xs text-gray-300 bg-white/5 px-2 py-1 rounded"><Pool className="w-3 h-3"/> Alberca</div> : null}
+                    {hotel.id === 1 || hotel.id === 2 ? <div className="flex items-center gap-1 text-xs text-gray-300 bg-white/5 px-2 py-1 rounded"><Waves className="w-3 h-3"/> Alberca</div> : null}
                   </div>
                 </div>
 

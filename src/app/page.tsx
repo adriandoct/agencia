@@ -79,6 +79,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* OAXACA CAROUSEL SECTION */}
+      <OaxacaCarousel />
+
       {/* TOP TOURS SECTION */}
       <section className="py-24 bg-deep-blue">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -171,9 +174,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* OAXACA CAROUSEL SECTION */}
-      <OaxacaCarousel />
 
       {/* PROMO BANNER */}
       <section className="py-12 bg-gold">

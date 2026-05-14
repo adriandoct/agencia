@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Search, MapPin, Calendar, Users, Plane, Building2, Ticket } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import OaxacaCarousel from '@/components/OaxacaCarousel';
 
 export default function Home() {
   return (
@@ -170,6 +171,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* OAXACA CAROUSEL SECTION */}
+      <OaxacaCarousel />
 
       {/* PROMO BANNER */}
       <section className="py-12 bg-gold">

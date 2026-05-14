@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Search, MapPin, Calendar, Users, Building2, Star, Coffee, Wifi, Waves } from 'lucide-react';
 import Image from 'next/image';
+import FeaturedHotelsCarousel from '@/components/FeaturedHotelsCarousel';
 
 const mockHoteles = [
   { id: 1, name: 'Quinta Real Oaxaca', stars: 5, location: 'Centro Histórico, Oaxaca', rating: 4.9, reviews: 342, price: '$4,200 MXN', image: 'https://images.unsplash.com/photo-1551882547-ff40c0d5e9af?q=80&w=2000&auto=format&fit=crop', promo: 'Desayuno Incluido' },
@@ -68,7 +69,11 @@ export default function HotelesPage() {
       </div>
 
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col lg:flex-row gap-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <FeaturedHotelsCarousel />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col lg:flex-row gap-8">
         {/* Filters Sidebar */}
         <aside className="w-full lg:w-1/4">
           <div className="bg-deep-blue-light border border-white/10 rounded-2xl p-6 sticky top-28">
